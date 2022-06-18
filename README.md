@@ -1,5 +1,5 @@
 # The Kamali
-Adds the custom Origin to Minecraft.
+Adds the custom Kamali Origin to Minecraft.
 
 **Intended Minecraft Version**: 1.18.
 
@@ -13,3 +13,5 @@ Step 3: Create a folder named "Kamali" or whatever you want it to be. Then, extr
 Step 4: If you are in with your world loaded, type "/reload" to reload the datapacks, if not, just enter your world.
 Step 5: Grab an Origin orb and have fun!
 ```
+
+![image](https://user-images.githubusercontent.com/59314622/174458671-337a5d3a-c668-4cd4-b3ce-268d4690eca5.png)
