@@ -1,0 +1,72 @@
+{
+  "type": "origins:action_over_time",
+  "interval": 20,
+  "entity_action": {
+    "type": "origins:if_else_list",
+    "actions": [
+      {
+        "condition": {
+          "type": "origins:health",
+          "comparison": "<=",
+          "compare_to": 5
+        },
+        "action": {
+            "type": "origins:execute_command",
+            "command": "effect give @e[tag=!immune, distance=..5] minecraft:wither 2 1 true",
+            "permission_level": 4
+        }
+      },
+      {
+        "condition": {
+          "type": "origins:health",
+          "comparison": "<=",
+          "compare_to": 7
+        },
+        "action": {
+            "type": "origins:execute_command",
+            "command": "effect give @e[tag=!immune, distance=..5] minecraft:weakness 2 1 true",
+            "permission_level": 7
+        }
+      },
+      {
+        "condition": {
+          "type": "origins:health",
+          "comparison": "<=",
+          "compare_to": 10
+        },
+        "action": {
+            "type": "origins:execute_command",
+            "command": "effect give @e[tag=!immune, distance=..5] minecraft:slowness 2 1 true",
+            "permission_level": 4
+        }
+      },
+      {
+        "condition": {
+          "type": "origins:health",
+          "comparison": "<=",
+          "compare_to": 14
+        },
+        "action": {
+            "type": "origins:execute_command",
+            "command": "effect give @e[tag=!immune, distance=..5] minecraft:resistance 2 1 true",
+            "permission_level": 4
+        }
+      },
+      {
+        "condition": {
+          "type": "origins:health",
+          "comparison": ">=",
+          "compare_to": 15
+        },
+        "action": {
+            "type": "origins:execute_command",
+            "command": "effect give @e[tag=!immune, distance=..5] minecraft:regeneration 5 1 true",
+            "permission_level": 4
+        }
+      }
+    ]
+  },
+  "hidden": false,
+  "name": "\u00A7e\u00A7nForest Aura",
+  "description": "You will grant status effects to OTHERS in a 5 block radius around you, the effects depend on your health."
+}

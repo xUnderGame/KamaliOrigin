@@ -1,0 +1,10 @@
+{
+	"type": "origins:attribute",
+	"modifier": {
+		"attribute": "minecraft:generic.max_health",
+		"value": -4.5,
+		"operation": "addition"
+	},
+	"name": "\u00A74\u00A7nFragile Heart",
+	"description": "You are fragile, therefore you have less hp."
+}

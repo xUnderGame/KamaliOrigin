@@ -1,0 +1,566 @@
+{
+  "type": "origins:active_self",
+  "interval": 20,
+  "entity_action": {
+    "type": "origins:if_else_list",
+    "actions": [
+      {
+        "condition": {
+            "type": "origins:equipped_item",
+            "equipment_slot": "mainhand",
+            "item_condition": {
+                "type": "origins:ingredient",
+                "ingredient": {
+                    "item": "minecraft:poppy"
+                }
+            }
+        },
+        "action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:execute_command",
+                    "command": "effect give @e[distance=..10] minecraft:regeneration 10 0 false",
+                    "permission_level": 4
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "clear @s minecraft:poppy 1",
+                    "permission_level": 4
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "execute at @s run particle minecraft:heart ~ ~0.5 ~ 10 0 10 0 200 normal",
+                    "permission_level": 4
+                }
+            ]
+        }
+      },
+      {
+        "condition": {
+            "type": "origins:equipped_item",
+            "equipment_slot": "mainhand",
+            "item_condition": {
+                "type": "origins:ingredient",
+                "ingredient": {
+                    "item": "minecraft:dandelion"
+                }
+            }
+        },
+        "action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:execute_command",
+                    "command": "effect give @e[distance=..10] minecraft:absorption 10 0 false",
+                    "permission_level": 4
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "clear @s minecraft:dandelion 1",
+                    "permission_level": 4
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "execute at @s run particle minecraft:falling_obsidian_tear ~ ~0.5 ~ 10 0 10 0 200 normal",
+                    "permission_level": 4
+                }
+            ]
+        }
+      },
+      {
+        "condition": {
+            "type": "origins:equipped_item",
+            "equipment_slot": "mainhand",
+            "item_condition": {
+                "type": "origins:ingredient",
+                "ingredient": {
+                    "item": "minecraft:blue_orchid"
+                }
+            }
+        },
+        "action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:execute_command",
+                    "command": "effect give @e[distance=..10] minecraft:haste 10 0 false",
+                    "permission_level": 4
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "clear @s minecraft:blue_orchid 1",
+                    "permission_level": 4
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "execute at @s run particle minecraft:enchanted_hit ~ ~0.5 ~ 10 0 10 0 200 normal",
+                    "permission_level": 4
+                }
+            ]
+        }
+      },
+      {
+        "condition": {
+            "type": "origins:equipped_item",
+            "equipment_slot": "mainhand",
+            "item_condition": {
+                "type": "origins:ingredient",
+                "ingredient": {
+                    "item": "minecraft:allium"
+                }
+            }
+        },
+        "action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:execute_command",
+                    "command": "effect give @e[distance=..10] minecraft:levitation 10 0 false",
+                    "permission_level": 4
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "clear @s minecraft:allium 1",
+                    "permission_level": 4
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "execute at @s run particle minecraft:dragon_breath ~ ~0.5 ~ 10 0 10 0 200 normal",
+                    "permission_level": 4
+                }
+            ]
+        }
+      },
+      {
+        "condition": {
+            "type": "origins:equipped_item",
+            "equipment_slot": "mainhand",
+            "item_condition": {
+                "type": "origins:ingredient",
+                "ingredient": {
+                    "item": "minecraft:azure_bluet"
+                }
+            }
+        },
+        "action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:execute_command",
+                    "command": "effect give @e[distance=..10] minecraft:invisibility 10 0 false",
+                    "permission_level": 4
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "clear @s minecraft:azure_bluet 1",
+                    "permission_level": 4
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "execute at @s run particle minecraft:end_rod ~ ~0.5 ~ 10 0 10 0 200 normal",
+                    "permission_level": 4
+                }
+            ]
+        }
+      },
+      {
+        "condition": {
+            "type": "origins:equipped_item",
+            "equipment_slot": "mainhand",
+            "item_condition": {
+                "type": "origins:ingredient",
+                "ingredient": {
+                    "item": "minecraft:red_tulip"
+                }
+            }
+        },
+        "action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:execute_command",
+                    "command": "effect give @e[distance=..10] minecraft:strength 10 0 false",
+                    "permission_level": 4
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "clear @s minecraft:red_tulip 1",
+                    "permission_level": 4
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "execute at @s run particle minecraft:flame ~ ~0.5 ~ 10 0 10 0 200 normal",
+                    "permission_level": 4
+                }
+            ]
+        }
+      },
+      {
+        "condition": {
+            "type": "origins:equipped_item",
+            "equipment_slot": "mainhand",
+            "item_condition": {
+                "type": "origins:ingredient",
+                "ingredient": {
+                    "item": "minecraft:oxeye_daisy"
+                }
+            }
+        },
+        "action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:execute_command",
+                    "command": "effect give @e[distance=..10] minecraft:night_vision 10 0 false",
+                    "permission_level": 4
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "clear @s minecraft:oxeye_daisy 1",
+                    "permission_level": 4
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "execute at @s run particle minecraft:glow ~ ~0.5 ~ 10 0 10 0 200 normal",
+                    "permission_level": 4
+                }
+            ]
+        }
+      },
+      {
+        "condition": {
+            "type": "origins:equipped_item",
+            "equipment_slot": "mainhand",
+            "item_condition": {
+                "type": "origins:ingredient",
+                "ingredient": {
+                    "item": "minecraft:cornflower"
+                }
+            }
+        },
+        "action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:execute_command",
+                    "command": "effect give @e[distance=..10] minecraft:jump_boost 10 0 false",
+                    "permission_level": 4
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "clear @s minecraft:cornflower 1",
+                    "permission_level": 4
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "execute at @s run particle minecraft:happy_villager ~ ~0.5 ~ 10 0 10 0 200 normal",
+                    "permission_level": 4
+                }
+            ]
+        }
+      },
+      {
+        "condition": {
+            "type": "origins:equipped_item",
+            "equipment_slot": "mainhand",
+            "item_condition": {
+                "type": "origins:ingredient",
+                "ingredient": {
+                    "item": "minecraft:lily_of_the_valley"
+                }
+            }
+        },
+        "action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:execute_command",
+                    "command": "effect give @e[distance=..10] minecraft:speed 10 0 false",
+                    "permission_level": 4
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "clear @s minecraft:lily_of_the_valley 1",
+                    "permission_level": 4
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "execute at @s run particle minecraft:cloud ~ ~0.5 ~ 10 0 10 0 200 normal",
+                    "permission_level": 4
+                }
+            ]
+        }
+      },
+      {
+        "condition": {
+            "type": "origins:equipped_item",
+            "equipment_slot": "mainhand",
+            "item_condition": {
+                "type": "origins:ingredient",
+                "ingredient": {
+                    "item": "minecraft:wither_rose"
+                }
+            }
+        },
+        "action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:execute_command",
+                    "command": "effect give @e[distance=..10] minecraft:wither 10 0 false",
+                    "permission_level": 4
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "clear @s minecraft:wither_rose 1",
+                    "permission_level": 4
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "execute at @s run particle minecraft:damage_indicator ~ ~0.5 ~ 10 0 10 0 200 normal",
+                    "permission_level": 4
+                }
+            ]
+        }
+      },
+      {
+        "condition": {
+            "type": "origins:equipped_item",
+            "equipment_slot": "mainhand",
+            "item_condition": {
+                "type": "origins:ingredient",
+                "ingredient": {
+                    "item": "minecraft:sunflower"
+                }
+            }
+        },
+        "action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:execute_command",
+                    "command": "effect give @e[distance=..10] minecraft:absorption 20 1 false",
+                    "permission_level": 4
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "clear @s minecraft:sunflower 1",
+                    "permission_level": 4
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "execute at @s run particle minecraft:falling_obsidian_tear ~ ~0.5 ~ 10 0 10 0 200 normal",
+                    "permission_level": 4
+                }
+            ]
+        }
+      },
+      {
+        "condition": {
+            "type": "origins:equipped_item",
+            "equipment_slot": "mainhand",
+            "item_condition": {
+                "type": "origins:ingredient",
+                "ingredient": {
+                    "item": "minecraft:lilac"
+                }
+            }
+        },
+        "action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:execute_command",
+                    "command": "effect give @e[distance=..10] minecraft:levitation 20 1 false",
+                    "permission_level": 4
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "clear @s minecraft:lilac 1",
+                    "permission_level": 4
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "execute at @s run particle minecraft:dragon_breath ~ ~0.5 ~ 10 0 10 0 200 normal",
+                    "permission_level": 4
+                }
+            ]
+        }
+      },
+      {
+        "condition": {
+            "type": "origins:equipped_item",
+            "equipment_slot": "mainhand",
+            "item_condition": {
+                "type": "origins:ingredient",
+                "ingredient": {
+                    "item": "minecraft:rose_bush"
+                }
+            }
+        },
+        "action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:execute_command",
+                    "command": "effect give @e[distance=..10] minecraft:regeneration 20 1 false",
+                    "permission_level": 4
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "clear @s minecraft:rose_bush 1",
+                    "permission_level": 4
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "execute at @s run particle minecraft:heart ~ ~0.5 ~ 10 0 10 0 200 normal",
+                    "permission_level": 4
+                }
+            ]
+        }
+      },
+      {
+        "condition": {
+            "type": "origins:equipped_item",
+            "equipment_slot": "mainhand",
+            "item_condition": {
+                "type": "origins:ingredient",
+                "ingredient": {
+                    "item": "minecraft:peony"
+                }
+            }
+        },
+        "action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:execute_command",
+                    "command": "effect give @e[distance=..10] minecraft:strength 20 1 false",
+                    "permission_level": 4
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "clear @s minecraft:peony 1",
+                    "permission_level": 4
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "execute at @s run particle minecraft:flame ~ ~0.5 ~ 10 0 10 0 200 normal",
+                    "permission_level": 4
+                }
+            ]
+        }
+      },
+      {
+        "condition": {
+            "type": "origins:equipped_item",
+            "equipment_slot": "mainhand",
+            "item_condition": {
+                "type": "origins:ingredient",
+                "ingredient": {
+                    "item": "minecraft:orange_tulip"
+                }
+            }
+        },
+        "action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:execute_command",
+                    "command": "effect give @e[distance=..10] minecraft:absorption 10 0 false",
+                    "permission_level": 4
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "clear @s minecraft:orange_tulip 1",
+                    "permission_level": 4
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "execute at @s run particle minecraft:falling_obsidian_tear ~ ~0.5 ~ 10 0 10 0 200 normal",
+                    "permission_level": 4
+                }
+            ]
+        }
+      },
+      {
+        "condition": {
+            "type": "origins:equipped_item",
+            "equipment_slot": "mainhand",
+            "item_condition": {
+                "type": "origins:ingredient",
+                "ingredient": {
+                    "item": "minecraft:white_tulip"
+                }
+            }
+        },
+        "action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:execute_command",
+                    "command": "effect give @e[distance=..10] minecraft:speed 10 0 false",
+                    "permission_level": 4
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "clear @s minecraft:white_tulip 1",
+                    "permission_level": 4
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "execute at @s run particle minecraft:cloud ~ ~0.5 ~ 10 0 10 0 200 normal",
+                    "permission_level": 4
+                }
+            ]
+        }
+      },
+      {
+        "condition": {
+            "type": "origins:equipped_item",
+            "equipment_slot": "mainhand",
+            "item_condition": {
+                "type": "origins:ingredient",
+                "ingredient": {
+                    "item": "minecraft:pink_tulip"
+                }
+            }
+        },
+        "action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:execute_command",
+                    "command": "effect give @e[distance=..10] minecraft:jump_boost 10 0 false",
+                    "permission_level": 4
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "clear @s minecraft:pink_tulip 1",
+                    "permission_level": 4
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "execute at @s run particle minecraft:happy_villager ~ ~0.5 ~ 10 0 10 0 200 normal",
+                    "permission_level": 4
+                }
+            ]
+        }
+      }
+    ]
+  },
+  "cooldown": 900,
+  "hud_render": {
+      "should_render": true,
+      "sprite_location": "origins:textures/gui/community/huang/resource_bar_02.png",
+      "bar_index": 8
+  },
+  "key": {
+      "key": "key.origins.secondary_active",
+      "continuous": true
+  },
+  "hidden": false,
+  "name": "\u00A7d\u00A7nFlower \u00A7a\u00A7nPower",
+  "description": "Using your powers, you can consume a flower. Each flower gives a different status effect to everything near you, including you. It has a 10 block radius. 45s CD."
+}

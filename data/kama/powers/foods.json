@@ -1,0 +1,9 @@
+{
+  "type": "origins:modify_exhaustion",
+  "modifier": {
+    "value": 0.3,
+    "operation": "multiply_base"
+  },
+    "name": "Foods",
+    "description": "You need to eat slightly more often than other origins."
+}

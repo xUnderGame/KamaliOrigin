@@ -1,0 +1,21 @@
+{
+    "type": "origins:self_action_when_hit",
+    "entity_action": {
+        "type": "origins:apply_effect",
+        "effect": {
+            "effect": "minecraft:slowness",
+        	"duration": 100,
+			"amplifier": 2,
+       		"is_ambient": true,
+       		"show_particles": true,
+       		"show_icon": false
+        }
+    },
+    "cooldown": 10,
+    "damage_condition": {
+        "type": "origins:projectile"
+    },
+    "hidden": false,
+    "name": "\u00A74\u00A7nHunted",
+    "description": "If you get hit by a projectile, you'll get slowed down for 5 seconds."
+}

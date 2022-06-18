@@ -1,0 +1,30 @@
+{
+	"powers": [
+            "origins:no_shield",
+            "kama:execution",
+            "kama:fight-or-flight",
+            "kama:forest-aura",
+            "kama:item-curse",
+            "kama:foods",
+            "kama:poison-dart",
+            "kama:fragile-heart",
+            "kama:nightsight",
+            "kama:flower-power",
+	    "kama:light-armor",
+            "kama:particle-radius",
+            "kama:slow-swimmer",
+            "kama:hunted",
+            "kama:omnivore",
+            "kama:tranquilizer",
+            "kama:peaceful",
+            "kama:nofist",
+            "kama:noarrow",
+            "kama:sounds",
+            "kama:stature"
+	],
+	"icon": "minecraft:pink_dye",
+	"order": 10,
+	"impact": 3,
+	"name": "Kamali",
+	"description": "\u00A7eKamalis \u00A77are \u00A7dpacifist \u00A77and \u00A75magical creatures \u00A77that live in packs \u00A72near forests\u00A77."
+}

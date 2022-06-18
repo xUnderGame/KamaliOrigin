@@ -1,0 +1,10 @@
+{
+    "type": "origins:modify_swim_speed",
+	"modifier": {
+		"operation": "multiply_base",
+		"value": -0.5
+	},
+	"hidden": false,
+	"name": "\u00A71\u00A7nSlow Swimmer",
+	"description": "You are a forest creature and scared of water, you are slower on water."
+}

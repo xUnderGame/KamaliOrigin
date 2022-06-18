@@ -1,0 +1,24 @@
+{
+	"type": "origins:fire_projectile",
+	"entity_type": "minecraft:arrow",
+    "speed": 2,
+	"tag": "{pickup:0b,damage:3,CustomPotionEffects:[{Id:9,Duration:200,Amplifiers:1},{Id:19,Duration:200,Amplifiers:0}]}",
+    "condition": {
+        "type": "origins:health",
+        "comparison": ">",
+        "compare_to": 4
+    },
+    "cooldown": 1500,
+    "hud_render": {
+        "should_render": true,
+        "sprite_location": "origins:textures/gui/community/spiderkolo/resource_bar_02.png",
+        "bar_index": 10
+    },
+    "key": {
+        "key": "key.origins.primary_active",
+        "continuous": true
+    },
+	"hidden": false,
+    "name": "\u00A72\u00A7nPoison Dart",
+    "description": "You can fire an arrow that poisons the other entity for a short period of time. 1m 15s CD"
+}

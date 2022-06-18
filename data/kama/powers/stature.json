@@ -1,0 +1,22 @@
+{
+	"type": "origins:action_on_callback",
+	"entity_action_added": {
+		"type": "origins:execute_command",
+		"command": "execute as @s run function kama:small",
+		"permission_level": 4
+	},
+	"entity_action_removed": {
+		"type": "origins:execute_command",
+		"command": "execute as @s run function kama:normal",
+		"permission_level": 4
+	},
+	"entity_action_respawned": {
+		"type": "origins:execute_command",
+		"command": "execute as @s run function kama:small",
+		"permission_level": 4
+	},
+	"execute_chosen_when_orb": true,
+	"name": "\u00A79\u00A7nStature",
+	"description": "You are 0.6 blocks tall.",
+	"hidden": false
+}

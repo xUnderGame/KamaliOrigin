@@ -1,0 +1,41 @@
+{
+    "type": "origins:modify_food",
+    "entity_action": {
+        "type": "origins:apply_effect",
+        "effects": [
+            {
+                "effect": "minecraft:nausea",
+                "duration": 180,
+                "amplifier": 0,
+                "is_ambient": true,
+                "show_particles": false,
+                "show_icon": true
+            },
+            {
+                "effect": "minecraft:hunger",
+                "duration": 120,
+                "amplifier": 1,
+                "is_ambient": true,
+                "show_particles": false,
+                "show_icon": true
+            }
+        ]
+    },
+    "item_condition": {
+        "type": "origins:ingredient",
+        "ingredient": {
+            "tag": "origins:meat"
+        }
+    }, 
+    "food_modifier": {
+        "operation": "addition",
+        "value": -2
+    },
+    "saturation_modifier": {
+        "operation": "addition",
+        "value": -2
+    },
+    "hidden": false,
+    "name": "\u00A7c\u00A7nOmnivore",
+    "description": "Kamalis prefer not to consume meat, even though you can eat it, it doesn't mean it's great for you."
+}

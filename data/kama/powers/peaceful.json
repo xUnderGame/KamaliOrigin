@@ -1,0 +1,11 @@
+{
+  "type": "origins:action_over_time",
+  "interval": 100,
+  "entity_action": {
+	  "type": "origins:execute_command",
+	  "command": "power grant @s kama:nodamage"
+  },
+  "hidden": false,
+  "name": "Peaceful",
+  "description": "You are a pacifist, this means that you cannot harm or kill other entities by attacking them. However, you can shoot them for half a heart of damage."
+}

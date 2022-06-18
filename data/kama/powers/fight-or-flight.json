@@ -1,0 +1,66 @@
+{
+  "type": "origins:action_over_time",
+  "interval": 20,
+  "entity_action": {
+    "type": "origins:if_else_list",
+    "actions": [
+      {
+        "condition": {
+          "type": "origins:health",
+          "comparison": "<",
+          "compare_to": 4
+        },
+        "action": {
+          "type": "origins:apply_effect",
+          "effect": {
+            "effect": "minecraft:regeneration",
+            "amplifier": 0,
+            "duration": 100,
+            "is_ambient": true,
+            "show_particles": false,
+            "show_icon": true
+          }
+        }
+      },
+      {
+        "condition": {
+          "type": "origins:health",
+          "comparison": "<=",
+          "compare_to": 14
+        },
+        "action": {
+          "type": "origins:apply_effect",
+          "effect": {
+            "effect": "minecraft:resistance",
+            "amplifier": 0,
+            "duration": 40,
+            "is_ambient": true,
+            "show_particles": false,
+            "show_icon": true
+          }
+        }
+      },
+      {
+        "condition": {
+          "type": "origins:health",
+          "comparison": ">=",
+          "compare_to": 15
+        },
+        "action": {
+          "type": "origins:apply_effect",
+          "effect": {
+            "effect": "minecraft:speed",
+            "amplifier": 0,
+            "duration": 40,
+            "is_ambient": true,
+            "show_particles": false,
+            "show_icon": true
+          }
+        }
+      }
+    ]
+  },
+  "hidden": false,
+  "name": "\u00A76\u00A7nFight\u00A77\u00A7n or \u00A7b\u00A7nFlight",
+  "description": "Depending on your HP, you will gain different status effects."
+}

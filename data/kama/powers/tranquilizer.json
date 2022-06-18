@@ -1,0 +1,62 @@
+{
+    "type": "origins:target_action_on_hit",
+    "entity_action": {
+        "type": "origins:apply_effect",
+        "effects": [
+            {
+                "effect": "minecraft:blindness",
+                "amplifier": 0,
+                "duration": 100,
+       		    "is_ambient": true,
+       		    "show_particles": false,
+       		    "show_icon": true
+            },
+        	{
+                "effect": "minecraft:slowness",
+        	    "duration": 100,
+			    "amplifier": 254,
+       		    "is_ambient": true,
+       		    "show_particles": true,
+       		    "show_icon": false
+        	},
+        	{
+        	    "effect": "minecraft:jump_boost",
+        	    "duration": 100,
+			    "amplifier": 128,
+        	    "is_ambient": true,
+       		    "show_particles": false,
+       		    "show_icon": false
+      		}
+        ]
+    },
+    "damage_condition": {
+        "type": "origins:and",
+        "conditions": [
+            {
+                "type": "origins:projectile"
+            },
+            {
+                "type": "origins:attacker",
+                "entity_condition": {
+				    "type": "origins:equipped_item",
+				    "equipment_slot": "mainhand",
+				    "item_condition": {
+                        "type": "origins:ingredient",
+                        "ingredient": {
+                            "item": "minecraft:bow"
+                        }
+				    }
+                }
+            }
+        ]
+    },
+    "cooldown": 400,
+    "hud_render": {
+        "should_render": true,
+        "sprite_location": "origins:textures/gui/community/huang/resource_bar_01.png",
+        "bar_index": 2
+    },
+    "hidden": false,
+    "name": "\u00A77\u00A7nTranquilizer",
+    "description": "Shooting an arrow with a BOW at someone will make them unable to move or see for 5 seconds, 20s CD."
+}
