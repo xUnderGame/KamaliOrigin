@@ -2,7 +2,7 @@
 	"type": "origins:fire_projectile",
 	"entity_type": "minecraft:arrow",
     "speed": 2,
-	"tag": "{pickup:0b,damage:3,CustomPotionEffects:[{Id:9,Duration:200,Amplifiers:1},{Id:19,Duration:200,Amplifiers:0}]}",
+	"tag": "{pickup:0b,damage:3,CustomPotionEffects:[{Id:9,Duration:200,Amplifiers:2},{Id:19,Duration:200,Amplifiers:0}]}",
     "condition": {
         "type": "origins:health",
         "comparison": ">",

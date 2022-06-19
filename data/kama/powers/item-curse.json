@@ -3,22 +3,11 @@
 	"min_stacks": 2,
 	"max_stacks": 2,
 	"duration_per_stack": 40,
-	"effects": [
-		{
-			"effect": "minecraft:mining_fatigue",
-			"amplifier": 4,
-			"is_ambient": true,
-			"show_particles": false,
-			"show_icon": true
-		},
-		{
-			"effect": "minecraft:slowness",
-			"amplifier": 1,
-			"is_ambient": true,
-			"show_particles": false,
-			"show_icon": true
-		}
-	],
+	"effect": "minecraft:slowness",
+	"amplifier": 1,
+	"is_ambient": true,
+	"show_particles": false,
+	"show_icon": true,
 	"condition": {
 		"type": "origins:or",
 		"conditions": [
@@ -106,5 +95,5 @@
 	},
 	"hidden": false,
 	"name": "Item Curse",
-	"description": "You are weak to cursed items, having a cursed item equipped will give you mining fatigue and slowness."
+	"description": "You are weak to cursed items, having a cursed item equipped will give you slowness."
 }
